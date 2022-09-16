@@ -1,0 +1,37 @@
+body{
+    font-family: "Karla", sans-serif;
+    min-height: 100vh; 
+    margin: 50px  100px;
+}
+
+input[type='submit'], button, [aria-label]{
+    cursor: pointer;
+}
+
+#edit-box{
+    visibility: visible;
+    margin:auto;
+}
+.edit_input{
+    height: 38px;
+    /*background-color:rgb(241, 241, 236);*/
+    border-color:#C0C0C0;
+    border-radius: 5px;
+
+}
+.form1{
+    width: auto;
+}
+.form_botton{
+    margin: 5px 10px;
+    width: 70px;
+    padding: 10px;
+}
+
+.form_table{
+    width: 800px;
+}
+
+.tasklist{
+    width: auto;
+}

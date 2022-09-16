@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY CRUD APP</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styel.css">     
+</head>
+
+<body>
+    
+    <div class="title" style="text-align:center">
+        <h1 style="text-align:center;">My Todo List</h1>
+        <hr>
+    </div>
+
+    <div class="input-group mb-3 form1">
+        <form  id="myform" class="todoform" action="javascript:void(0)" onsubmit="app.add()">
+            <label for="task">Task </label>
+            <input type="text" placeholder="Enter your task" id="add-todo" class="form-control" style="margin-bottom:5px;">
+            <input type="submit" class="btn btn-primary"   value="Add">
+        </form>
+    </div>
+    <hr>
+    <div>
+        <p   id="counter"> You Have: 30 Task undone</p>
+        <table class="table form_table tasklist">
+           <tr class="to-do">
+               <th>
+                   <h3>To-do:</h3>
+               </th>
+           </tr>
+           <tbody  id="tasks" ;
+           >
+
+           </tbody>
+        </table>
+    </div>
+
+    <div id="edit-box"  role="aria-hidden">
+        <form id="save-edit"   action="javascript:void(0);" method="POST">
+            <input type="text" id="edit-todo" class="edit_input" >
+            <input type="submit" value="Save" class="btn btn-success">
+            <a onclick="CloseInput()" arial-label="Close">&#10006;</a>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
